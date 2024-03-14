@@ -1,0 +1,6 @@
+subject: Skills
+listing-order: 5
+icon: "/assets/img/screwdriver-wrench.svg"
+contents:
+  - title: "Programming Languages: `C/C++`, `Python`, `Javascript`, `Go`"
+  - title: "Frameworks: `AWS`, `React`, `Flask`, `Kubernetes`"

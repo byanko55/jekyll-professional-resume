@@ -1,0 +1,15 @@
+subject: Education
+listing-order: 1
+icon: "/assets/img/graduation-cap.svg"
+contents:
+  - title: Ph. D. in Computer Science
+    university: Farvard Univ.
+    date: Mar. 2019 - Aug. 2023
+  - title: Master Degree in Computer Science
+    university: Stanfort Univ.
+    description: "**GPA**: `4.1/4.3`"
+    date: Mar. 2014 - Feb. 2016
+  - title: Bachelor's Degree in Electronic Engineering
+    university: Kambridge Univ.
+    description: "**GPA**: `3.9/4.3`"
+    date: Mar. 2010 - Feb. 2014
