@@ -1,0 +1,116 @@
+---
+---
+
+html, body {
+    margin:0;
+    padding:0;
+}
+
+body { 
+    margin:0 auto;
+    max-width:1024px;
+}
+
+ul, li {
+    list-style:none;
+    padding:0;
+}
+
+a {
+    text-decoration:none;
+}
+
+#header{
+    width:100%;
+    position:fixed;
+    display:none; //display:flex;
+    top:0;
+    left:0;
+    background-color:beige;
+    box-shadow:0px 4px 8px 0 #aaa;
+    z-index:1;
+
+    ul {
+        margin-left:auto; 
+        margin-right:1rem;
+
+        li {
+            display:inline-block;
+            margin-left:1rem;
+        }
+    }
+}
+
+#about, #contents, #footer { text-align:center; }
+
+#about{
+    margin:4rem auto;
+
+    .photo-zone img {
+        width:128px;
+        aspect-ratio:1.0;
+    }
+
+    img {
+        width:16px;
+        aspect-ratio:1.0;
+    }
+
+    .contact-list {
+        position:relative;
+
+        ul {
+            margin:2rem auto;
+            border-top:1px solid;
+            width:50%;
+
+            li {
+                display:inline-block;
+                margin:1rem;
+            }
+        }
+    }
+}
+
+#contents{
+    text-align: left;
+
+    img {
+        width:32px;
+        aspect-ratio:1.0;
+    }
+
+    h2 {
+        text-decoration: 1px underline;
+    }
+
+    ul {
+        margin-bottom: 4rem;
+    }
+
+    li { 
+        margin-bottom: 2rem; 
+        line-height: 100%;
+    }
+
+    .content-header { 
+        display: table;
+        width: 100%;
+        position: relative;
+        margin: 1rem auto;
+
+        p, span { 
+            display: table-cell;
+        }
+
+        p {font-weight: 600;}
+    }
+
+    .content-date { text-align: right; }
+
+    .subitem {
+        list-style: square;
+        margin-left: 2rem;
+        margin-bottom: 0.5rem;
+    }
+}
