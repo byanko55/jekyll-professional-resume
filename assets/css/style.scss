@@ -8,7 +8,7 @@ html, body {
 
 body { 
     margin:0 auto;
-    max-width:1024px;
+    //max-width:1024px;
 }
 
 ul, li {
@@ -44,35 +44,126 @@ a {
 #about, #contents, #footer { text-align:center; }
 
 #about{
-    margin:4rem auto;
+    width: 100%;
 
-    .photo-zone img {
-        width:128px;
-        aspect-ratio:1.0;
+    .profile-zone{
+        width: 100%;
+        position: relative;
+        margin:4rem auto;
+        background-color: lightslategrey;
     }
 
-    img {
-        width:16px;
+    .profile-zone .profile-img {
+        width:256px;
         aspect-ratio:1.0;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        border-radius:50%;
+        border: 4px solid darkkhaki;
     }
 
-    .contact-list {
-        position:relative;
+    .profile-zone .personal-info {
+        width: 768px;
+        margin: auto;
+        columns: 2;
+        line-height: 250%;
+        padding: 1rem 0;
+    }
 
-        ul {
-            margin:2rem auto;
-            border-top:1px solid;
-            width:50%;
+    .profile-zone .personal-info span { 
+        color: white;
+        display: inline-flex;
+        font-size: 0;
+        vertical-align: middle;
+        clip-path: inset(0 100% 0 0);
+        transition: font-size .75s ease-in-out, clip-path .5s;
+        transition-delay: 0s, .5s;
+        transition-property: font-size, clip-path;
+    }
 
-            li {
-                display:inline-block;
-                margin:1rem;
+    .profile-zone .personal-info img {
+        width:20px;
+        aspect-ratio:1.0;
+        cursor: pointer;
+        vertical-align: middle;
+        transition: all .75s;
+        filter: invert(10%) sepia(4%) saturate(5321%) hue-rotate(201deg) brightness(99%) contrast(90%);
+    }
+
+    .profile-zone .personal-info {
+        a {
+            display: inline-flex;
+            cursor: pointer;
+
+            &:hover {
+                img {
+                    width: 28px;
+                    filter: brightness(0) saturate(100%) invert(77%) sepia(47%) saturate(1006%) hue-rotate(358deg) brightness(104%) contrast(105%);
+                }
+
+                span {
+                    font-size: 1rem;
+                    clip-path: inset(0 0 0 0);
+                };
             }
         }
+
+        li { height: 40px; }
+
+        li:nth-child(n+1):nth-child(-n+5) { 
+            text-align: right; 
+
+            img { 
+                order: 1; 
+                margin-right: 0.5rem;
+            }
+
+            div { 
+                order: 2;
+            }
+        }
+
+        li:nth-child(n+6):nth-child(-n+10) { 
+            text-align: left; 
+
+            img { 
+                order: 2; 
+                margin-left: 0.5rem;
+            }
+            div { 
+                order: 1;
+            }
+        }
+
+        li:nth-child(1) { margin-right: 7.25rem; }
+        li:nth-child(2) { margin-right: 8.25rem; }
+        li:nth-child(3) { margin-right: 8.75rem; }
+        li:nth-child(4) { margin-right: 8.25rem; }
+        li:nth-child(5) { margin-right: 7.25rem; }
+        li:nth-child(6) { margin-left: 7.25rem; }
+        li:nth-child(7) { margin-left: 8.25rem; }
+        li:nth-child(8) { margin-left: 8.75rem; }
+        li:nth-child(9) { margin-left: 8.25rem; }
+        li:nth-child(10) { margin-left: 7.25rem; }
     }
+    
+    .name-zone { margin-top: -2rem; }
+
+    .name-zone h1, 
+    .name-zone h2 {
+        margin: 0;
+    }
+    
+    .name-zone h1 { color: darkgoldenrod; }
+    .name-zone h2 { color: cadetblue; }
 }
 
 #contents{
+    width: 75%;
+    max-width: 1024px;
+    margin: auto;
     text-align: left;
 
     img {
@@ -91,6 +182,16 @@ a {
     li { 
         margin-bottom: 2rem; 
         line-height: 100%;
+    }
+
+    .subject-icon {
+        width:32px;
+        aspect-ratio:1.0;
+        vertical-align: sub;
+        background: aqua;
+        border-radius: 50%;
+        padding: 8px;
+        margin-left: -48px;
     }
 
     .content-header { 

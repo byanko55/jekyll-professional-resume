@@ -36,67 +36,74 @@ layout: default
     </ul>
   </div>
   <div id="about">
-    <div class="photo-zone">
-      <img src="{{ '/assets/img/profile.webp' }}" alt="My Photo">
-    </div>
-    <div class="name-zone">
-      <h1>Your Name Here</h1>
-      {% if site.phone_number %}
-      <span>
-        <img src="{{ '/assets/img/phone.svg' }}" alt="My Phone Number">
-        {{ site.phone_number }}
-      </span>
-      {% endif %}
-      {% if site.address %}
-      <span>
-        <img src="{{ '/assets/img/location-dot.svg' }}" alt="My Address">
-        {{ site.address }}
-      </span>
-      {% endif %}
-    </div>
-    <div class="contact-list">
-      <ul>
+    <div class="profile-zone">
+      <img class="profile-img" src="{{ '/assets/img/profile.webp' }}" alt="My Photo">
+      <ul class="personal-info">
+        {% if site.phone_number %}
+        <li><a aria-label="My Phone">
+          <img src="{{ '/assets/img/phone.svg' }}" alt="My Phone Number">
+          <div><span>{{ site.phone_number }}</span></div>
+        </a></li>
+        {% endif %}
+        {% if site.address %}
+        <li><a aria-label="My Address" href="https://www.google.com/maps/search/{{ site.address }}">
+          <img src="{{ '/assets/img/location-dot.svg' }}" alt="My Address">
+          <div><span>{{ site.address }}</span></div>
+        </a></li>
+        {% endif %}
         {% if site.email %}
           <li><a aria-label="My Email" href="{{ site.email }}">
             <img src="{{ '/assets/img/envelope.svg' }}" alt="My Email">
+            <div><span>{{ site.email }}</span></div>
           </a></li>
         {% endif %}
         {% if site.linkedin_username %}
           <li><a aria-label="My LinkedIn" href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
             <img src="{{ '/assets/img/linkedin.svg' }}" alt="My LinkedIn">
+            <div><span>@{{ site.linkedin_username }}</span></div>
           </a></li>
         {% endif %}
         {% if site.github_username %}
           <li><a aria-label="My Github" href="https://github.com/{{ site.github_username }}">
             <img src="{{ '/assets/img/github.svg' }}" alt="My Github">
+            <div><span>@{{ site.github_username }}</span></div>
           </a></li>
         {% endif %}
         {% if site.twitter_username %}
           <li><a aria-label="My Twitter" href="https://twitter.com/{{ site.twitter_username }}">
             <img src="{{ '/assets/img/twitter.svg' }}" alt="My Twitter">
+            <div><span>@{{ site.twitter_username }}</span></div>
           </a></li>
         {% endif %}
         {% if site.instagram_username %}
           <li><a aria-label="My Instagram" href="https://www.instagram.com/{{ site.instagram_username }}">
             <img src="{{ '/assets/img/instagram.svg' }}" alt="My Instagram">
+            <div><span>@{{ site.instagram_username }}</span></div>
           </a></li>
         {% endif %}
         {% if site.facebook_username %}
           <li><a aria-label="My Facebook" href="https://www.facebook.com/{{ site.facebook_username }}">
             <img src="{{ '/assets/img/facebook.svg' }}" alt="My Facebook">
+            <div><span>@{{ site.facebook_username }}</span></div>
           </a></li>
         {% endif %}
         {% if site.youtube_username %}
           <li><a aria-label="My Youtube" href="https://www.youtube.com/{{ site.youtube_username }}">
             <img src="{{ '/assets/img/youtube.svg' }}" alt="My Youtube">
+            <div><span>@{{ site.youtube_username }}</span></div>
           </a></li>
         {% endif %}
         {% if site.blog_url %}
           <li><a aria-label="My Blog" href="{{ site.blog_url }}">
             <img src="{{ '/assets/img/house.svg' }}" alt="My Blog">
+            <div><span>{{ site.blog_url }}</span></div>
           </a></li>
         {% endif %}
       </ul>
+    </div>
+    <div class="name-zone">
+      <h1>Your Name Here</h1>
+      <h2>〈Your Job Here〉</h2>
     </div>
   </div>
   <div id="contents">
@@ -104,8 +111,7 @@ layout: default
       {% for subject in meta %}
         <li id="{{ subject.subject }}">
           <h2 class="subject-name">
-            <img src="{{ subject.icon }}" alt="{{ subject.subject }}">
-            {{ subject.subject }}
+            <img class="subject-icon" src="{{ subject.icon }}" alt="{{ subject.subject }}">{{ subject.subject }}
           </h2>
           <ul>
               {% for member in subject.contents %}
