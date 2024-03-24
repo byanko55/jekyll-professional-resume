@@ -8,7 +8,15 @@ html, body {
 
 body { 
     margin:0 auto;
-    //max-width:1024px;
+    
+    &:before{
+        content:"";
+        position: fixed;
+        left: calc(50% - min(512px, 25%) - 54px);
+        width: 3px;
+        height: 100%;
+        background: brown;
+    }
 }
 
 ul, li {
@@ -23,7 +31,7 @@ a {
 #header{
     width:100%;
     position:fixed;
-    display:none; //display:flex;
+    display:none;
     top:0;
     left:0;
     background-color:beige;
@@ -167,12 +175,15 @@ a {
     text-align: left;
 
     img {
-        width:32px;
+        width:24px;
         aspect-ratio:1.0;
+        margin-right: 8px;
+        vertical-align: sub;
     }
 
     h2 {
         text-decoration: 1px underline;
+        margin: 2rem auto;
     }
 
     ul {
@@ -191,7 +202,13 @@ a {
         background: aqua;
         border-radius: 50%;
         padding: 8px;
-        margin-left: -48px;
+        transform: translateY(8px);
+        margin-right: 24px;
+        margin-left: -72px;
+    }
+
+    .item {
+        position: relative;
     }
 
     .content-header { 
@@ -200,11 +217,26 @@ a {
         position: relative;
         margin: 1rem auto;
 
-        p, span { 
-            display: table-cell;
+        &:before{
+            content:"";
+            position: absolute;
+            top: 8px;
+            left: -56px;
+            width: 16px;
+            aspect-ratio: 1.0;
+            background: aqua;
+            border-radius: 50%;
         }
 
-        p {font-weight: 600;}
+        p, span { 
+            display: table-cell;
+            line-height: 150%;
+        }
+
+        p { 
+            font-weight: 600;
+            font-size: 20px;
+        }
     }
 
     .content-date { text-align: right; }
