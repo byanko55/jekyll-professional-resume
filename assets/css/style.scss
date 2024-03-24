@@ -12,7 +12,7 @@ body {
     &:before{
         content:"";
         position: fixed;
-        left: calc(50% - min(512px, 25%) - 54px);
+        left: calc(50% - min(512px, 35%) - 50px);
         width: 3px;
         height: 100%;
         background: brown;
@@ -28,23 +28,26 @@ a {
     text-decoration:none;
 }
 
-#header{
-    width:100%;
-    position:fixed;
-    display:none;
-    top:0;
-    left:0;
-    background-color:beige;
-    box-shadow:0px 4px 8px 0 #aaa;
-    z-index:1;
+#sidebar{
+    position: fixed;
+    width: 128px;
+    top: 320px;
+    right: 0;
+    z-index: 1;
+    font-size: 12px;
 
-    ul {
-        margin-left:auto; 
-        margin-right:1rem;
+    li {
+        margin: 6px;
+        margin-right: 0;
+        padding: 4px 24px 4px 12px;
+        border-radius: 8px 0 0 8px;
+        background: aqua;
+        transition: all 0.5s;
 
-        li {
-            display:inline-block;
-            margin-left:1rem;
+        &:hover{
+            padding-left: 24px;
+            padding-right: 12px;
+            background: gold;
         }
     }
 }
@@ -74,6 +77,7 @@ a {
 
     .profile-zone .personal-info {
         width: 768px;
+        height: 200px;
         margin: auto;
         columns: 2;
         line-height: 250%;
@@ -169,7 +173,7 @@ a {
 }
 
 #contents{
-    width: 75%;
+    width: 70%;
     max-width: 1024px;
     margin: auto;
     text-align: left;

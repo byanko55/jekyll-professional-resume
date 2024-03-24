@@ -21,7 +21,7 @@ layout: default
 </head>
 
 <body>
-  <div id="header">
+  <div id="sidebar">
     <ul>
       <li>
         <a class="content-link" href="#about">About Me</a>
@@ -127,7 +127,7 @@ layout: default
                   </div>
                   {% for item in member %}
                     {% if item[0] != "title" and item[0] != "date" %}
-                      {% if item[1].first %} <!-- list -->
+                      {% if item[1].first %}
                         <ul>
                           {% for subitem in item[1] %}
                           <li class="subitem">
