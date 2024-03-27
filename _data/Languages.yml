@@ -2,9 +2,6 @@ subject: Languages
 listing-order: 7
 icon: "/assets/img/globe.svg"
 contents:
-  - title: Dutch (Mother tongue)
-    rating: 5
-  - title: German
-    rating: 3
-  - title: English
-    rating: 4
+  - title: "Dutch ('*Native*'): <span class='score'>●●●●●</span>"
+  - title: "German: <span class='score'>●●●○○</span>"
+  - title: "English: <span class='score'>●●●◐○</span>"
