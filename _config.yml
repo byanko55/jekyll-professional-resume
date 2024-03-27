@@ -4,16 +4,14 @@ icon_img: assets/img/icon.webp
 
 phone_number: 012-345-6789
 address: City, Country
-address_full: 123 Broadway, City, State, 012345, Country
-
-email: your-email@example.com
+email: email@example.com
 linkedin_username: linkedin
 github_username: github
 instagram_username: instagram
 twitter_username: twitter
 facebook_username: facebook
 youtube_username: youtube
-blog_url: your-homepage-url
+blog_url: homepage-url
 
 exclude:
   - resources/

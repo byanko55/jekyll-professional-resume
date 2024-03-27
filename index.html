@@ -18,6 +18,7 @@ layout: default
 
   <link rel="shortcut icon" type="image/png" href="{{ site.logo_img }}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' }}">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 
 <body>
@@ -120,7 +121,7 @@ layout: default
                     {{ member.title | markdownify }}
                     {% if member.date %}
                       <span class="content-date">
-                        <img src="{{ '/assets/img/calendar-days.svg' }}" alt="date">
+                        <img src="{{ '/assets/img/calendar.webp' }}" alt="date">
                         {{ member.date }}
                       </span>
                     {% endif %}
@@ -131,7 +132,7 @@ layout: default
                         <ul>
                           {% for subitem in item[1] %}
                           <li class="subitem">
-                            {{ subitem }}
+                            {{ subitem | markdownify }}
                           </li>
                           {% endfor %}
                         </ul>
