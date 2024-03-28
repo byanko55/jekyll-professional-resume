@@ -23,18 +23,7 @@ layout: default
 
 <body>
   <div id="sidebar">
-    <ul>
-      <li>
-        <a class="content-link" href="#about">About Me</a>
-      </li>
-      {% for subject in meta %}
-      <li>
-        <a class="content-link" href="#{{ subject.subject }}">
-          {{ subject.subject }}
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
+    <ul class="toc-box"></ul>
   </div>
   <div id="about">
     <div class="profile-zone">
@@ -110,9 +99,12 @@ layout: default
   <div id="contents">
     <ul>
       {% for subject in meta %}
-        <li id="{{ subject.subject }}">
+        <li class="subject" id="{{ subject.subject }}">
           <h2 class="subject-name">
-            <img class="subject-icon" src="{{ subject.icon }}" alt="{{ subject.subject }}">{{ subject.subject }}
+            <div>
+              <img class="subject-icon" src="{{ subject.icon }}" alt="{{ subject.subject }}">
+            </div>
+            {{ subject.subject }}
           </h2>
           <ul>
               {% for member in subject.contents %}
@@ -154,4 +146,5 @@ layout: default
     </span>
   </div>
 </body>
+<script src="{{ '/assets/js/main.js' }}"></script>
 </html>
