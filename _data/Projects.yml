@@ -2,17 +2,20 @@ subject: Projects
 listing-order: 3
 icon: "/assets/img/clipboard-list.svg"
 contents:
-  - title: "ChatGPT [(https://chat.openai.com/)](https://chat.openai.com/)"
+  - title: "ChatGPT ([https://chat.openai.com/](https://chat.openai.com/))"
     description: 
       - Chatbot developed based on a large language model
       - Designed Generative algorithm to generate novel human-like content
       - "Technology Used: Rust, Typescript, Python, Ruby"
-  - title: "AWS-cli [(https://github.com/aws/aws-cli)](https://github.com/aws/aws-cli)"
+    image: "![](https://i.ibb.co/Jx7PGSY/30141-23468-655.webp)"
+  - title: "AWS-cli ([https://github.com/aws/aws-cli](https://github.com/aws/aws-cli))"
     description: 
       - Universal Command Line Interface for Amazon Web Services
       - Developed a scheme to facilitate users’ authentication without having to remember their credentials
       - "Technology Used: Typescript, Python, Go"
-  - title: "PyTorch [(https://pytorch.org/)](https://pytorch.org/)" 
+    image: "![](https://i.ibb.co/KDCsqJD/cli-cdk-sdk.webp)"
+  - title: "PyTorch ([https://pytorch.org/](https://pytorch.org/))" 
     description: 
       - Machine learning library for applications such as computer vision and natural language processing
       - "Technology Used: Python, Cuda, Objective-C++"
+    image: "![](https://i.ibb.co/7G5tMf5/pytorch.webp)"
