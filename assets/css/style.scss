@@ -134,9 +134,7 @@ a { text-decoration:none; }
                 margin-right: 0.5rem;
             }
 
-            div { 
-                order: 2;
-            }
+            div { order: 2; }
         }
 
         li:nth-child(n+6):nth-child(-n+10) { 
@@ -146,9 +144,8 @@ a { text-decoration:none; }
                 order: 2; 
                 margin-left: 0.5rem;
             }
-            div { 
-                order: 1;
-            }
+
+            div { order: 1; }
         }
 
         li:nth-child(1) { margin-right: 5.25rem; }
@@ -179,9 +176,7 @@ a { text-decoration:none; }
     margin-left: 7.5%;
     text-align: left;
 
-    ul {
-        margin-bottom: 3rem;
-    }
+    ul { margin-bottom: 3rem; }
 
     li { 
         margin-top: 2rem;
@@ -214,9 +209,7 @@ a { text-decoration:none; }
         filter: invert(27%) sepia(2%) saturate(3297%) hue-rotate(8deg) brightness(92%) contrast(82%);
     }
 
-    .item {
-        position: relative;
-    }
+    .item { position: relative; }
 
     .item:nth-child(1) { margin-top: -0.5rem; }
 
@@ -292,6 +285,7 @@ a { text-decoration:none; }
     code {
         margin:0 2px;
         padding:1px 5px;
+        font-size: 14px;
         border: 1px solid var(--theme3-dim);
         background-color:var(--color-background);
         border-radius:3px;
@@ -307,9 +301,7 @@ a { text-decoration:none; }
         width: 60px;
     }
 
-    ul + p {
-        margin-top: -2rem;
-    }
+    ul + p { margin-top: -2rem; }
 
     .content-header + .item { margin-top: 0; }
 
