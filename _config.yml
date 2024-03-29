@@ -15,3 +15,8 @@ blog_url: homepage-url
 
 exclude:
   - resources/
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
