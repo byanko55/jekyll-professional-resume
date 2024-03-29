@@ -7,15 +7,17 @@
 
 A simple and modern resume template, best fit for either **Academic CV (Curriculum Vitae)** or **Engineer Portfolio**.
 
+Live demo is available [here](https://cvlian.github.io/).
+
 ![demo](https://i.ibb.co/HYshYc0/231232121.webp)
 
 ## Setup
 Fork [this repository](https://github.com/byanko55/jekyll-professional-resume) or download the [source](https://github.com/byanko55/jekyll-professional-resume/releases) as a zip.
 
-If you use as destination a repository named USERNAME.github.io, then your url will be https://USERNAME.github.io/.
+If you use as destination a repository named USERNAME.github.io, then your URL will be https://USERNAME.github.io/.
 
 ### Update Profile
-In `_config.yml`, you can modify personal info such as your photo, phone number, email, and other social accounts.
+In `_config.yml`, you can modify personal info such as your *photo, phone number, email*, and other social accounts.
 
 ```yml
 profile_img: assets/img/profile.webp
@@ -32,7 +34,7 @@ github_username: github
 
 ### Create a Topic
 
-All resume information should be placed in a directory named '`_data`'. You can manage personal data in several groups separately, making a *Yaml* (`.yml`) file for each subject.
+All resume information should be placed in a directory named '`_data`'. You may need to manage personal data in separate groups, making a *Yaml* (`.yml`) file for each subject.
 
 ```
 ._data
@@ -58,12 +60,12 @@ For instance,
 
 ### Fill your infomation
 
-Open the *Yaml* file which you created right before. 
+Open the *Yaml* file which you created right before. Add the following materials inside of the file.
 
-* **subject**: title of a subject (ex., *Education*, *Work Experience*, *Skills*, and so on)
-* **listing-order**: determines the display order (from top to bottom) of the subject
-* **icon**: subject icon to be displayed
-* **contents**: The details of each item are listed in `KEY`-`VALUE` pairs 
+* **subject**: title of a subject
+* **listing-order**: determines the display order (from top to bottom)
+* **icon**: representative icon to be displayed (pick out from `resources/svgs`)
+* **contents**: The details of each item, listed in `KEY`-`VALUE` pairs 
 
 ```yml
 subject:
@@ -102,7 +104,7 @@ The rendered output looks like this:
 
 See also the advanced example. 
 
-**Important**: You can use markdown syntax to **apply text bold, italic, and underlined** effects or **create HTML elements** (including image, links, span, etc.)!
+> **Important**: You can use markdown syntax to **apply text bold, italic, and underlined** effects or **create HTML elements** (including image, links, span, etc.)!
 
 ```
 subject: Projects
