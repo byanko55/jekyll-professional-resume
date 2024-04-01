@@ -17,7 +17,9 @@ youtube_username: youtube
 blog_url: homepage-url
 
 exclude:
+  - _posts/
   - resources/
+  - vendor/
 
 plugins:
   - jekyll-feed
