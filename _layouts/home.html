@@ -13,7 +13,8 @@
   <title>{{ site.title }}</title>
   {% seo %}
 
-  <link rel="shortcut icon" type="image/png" href="{{ site.logo_img }}">
+  <link rel="icon" type="image/png" href="{{ site.icon_img }}">
+  <link rel="shortcut icon" type="image/png" href="{{ site.icon_img }}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' }}">
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
@@ -24,7 +25,7 @@
   </div>
   <div id="about">
     <div class="profile-zone">
-      <img class="profile-img" src="{{ '/assets/img/profile.webp' }}" alt="My Photo">
+      <img class="profile-img" src="{{ site.profile_img }}" alt="My Photo">
       <ul class="personal-info">
         {% if site.phone_number %}
         <li><a aria-label="My Phone">
@@ -89,8 +90,8 @@
       </ul>
     </div>
     <div class="name-zone">
-      <h1>Your Name Here</h1>
-      <h2>〈Your Job Here〉</h2>
+      <h1>{{ site.name }}</h1>
+      <h2>{{ site.job }}</h2>
     </div>
   </div>
   <div id="contents">
