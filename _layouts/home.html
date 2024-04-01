@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-{% assign meta = "" | split, "" %}
+{% assign meta = "" | split: "" %}
 {% for yml_file in site.data %}
   {% assign meta = meta | push:yml_file[1] %}
 {% endfor %}
