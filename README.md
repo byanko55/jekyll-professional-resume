@@ -23,6 +23,9 @@ In `_config.yml`, you can modify personal info such as your *photo, phone number
 profile_img: assets/img/profile.webp
 icon_img: assets/img/icon.webp
 
+name: "Your Name Here"
+job: "〈Your Job Here〉"
+
 phone_number: 012-345-6789
 address: City, Country
 email: email@example.com
@@ -106,7 +109,7 @@ See also the advanced example.
 
 > **Important**: You can use markdown syntax to **apply text bold, italic, and underlined** effects or **create HTML elements** (including image, links, span, etc.)!
 
-```
+```yml
 subject: Projects
 listing-order: 3
 icon: "/assets/img/clipboard-list.svg"
@@ -123,18 +126,9 @@ contents:
 
 ![example](https://i.ibb.co/tCNCyYr/231321.webp)
 
-### Run site locally
+## Build from Gem package
 
-To test locally, run the following:
-
-```
-bundle install
-bundle exec jekyll serve
-```
-
-Now open [http://localhost:4000](http://localhost:4000) in your browser.
-<br></br>
-
+If you don't like the above setup option (clone/fork the original github repo), then you can also build your site by installing the gem package remotely. Read this altenative [guide](https://github.com/byanko55/jekyll-professional-resume/blob/master/docs/Installation%20from%20package.md).
 
 ## Customizing
 
@@ -151,6 +145,14 @@ Wanna pick another color? You can edit the base theme palette in `assets/css/sty
     ...
 
 }
+```
+
+### Site Shortcut Icon
+To replace the shortcut icon displayed on browser tab, modify *icon_img* field in `_config.yml`.
+![shortcut](https://i.ibb.co/g9cYjRj/213213214.webp)
+
+```yml
+icon_img: "<IMAGE URL/PATH>"
 ```
 
 ## Contribution
