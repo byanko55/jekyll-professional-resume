@@ -9,12 +9,21 @@ phone_number: 010-3166-6638
 address: Seoul, Korea (South)
 email: nure__@naver.com
 linkedin_username: linkedin
+<<<<<<< HEAD
 github_username: Ganzinam2
 instagram_username: jaywon__
 #twitter_username: twitter
 #facebook_username: facebook
 #youtube_username: youtube
 blog_url: Ganzinam2.github.io
+=======
+github_username: github
+instagram_username: instagram
+twitter_username: twitter
+facebook_username: facebook
+youtube_username: youtube
+blog_url: Jaywon2.github.io
+>>>>>>> 3dc9fc9 (Update url 2)
 
 exclude:
   - _posts/
