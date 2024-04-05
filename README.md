@@ -23,14 +23,14 @@ In `_config.yml`, you can modify personal info such as your *photo, phone number
 profile_img: assets/img/profile.webp
 icon_img: assets/img/icon.webp
 
-name: "Your Name Here"
-job: "〈Your Job Here〉"
+name: "Jaewon Kim"
+job: "SW Engineer"
 
-phone_number: 012-345-6789
-address: City, Country
-email: email@example.com
+phone_number: 010-3166-6638
+address: Seoul, Korea (South)
+email: nure__@naver.com
 linkedin_username: linkedin
-github_username: github
+github_username: Ganzinam2
 ...
 
 ```
