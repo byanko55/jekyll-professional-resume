@@ -2,19 +2,19 @@ title: Title of your CV site
 profile_img: assets/img/profile.webp
 icon_img: assets/img/icon.webp
 
-name: "Your Name Here"
-job: "〈Your Job Here〉"
+name: "Jaewon Kim"
+job: "SW Engineer"
 
-phone_number: 012-345-6789
-address: City, Country
-email: email@example.com
+phone_number: 010-3166-6638
+address: Seoul, Korea (South)
+email: nure__@naver.com
 linkedin_username: linkedin
-github_username: github
-instagram_username: instagram
-twitter_username: twitter
-facebook_username: facebook
-youtube_username: youtube
-blog_url: homepage-url
+github_username: Ganzinam2
+instagram_username: jaywon__
+#twitter_username: twitter
+#facebook_username: facebook
+#youtube_username: youtube
+blog_url: Ganzinam2.github.io
 
 exclude:
   - _posts/
