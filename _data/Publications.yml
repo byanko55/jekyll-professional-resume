@@ -4,8 +4,10 @@ icon: "/assets/img/flask.svg"
 contents:
   - title: Journal
     ref: 
-      - "[1] **M. Yankovich**, L. Hernández, M. Roveri, “[A symmetric encryption method with biometric authorization for constrained environments](https://scholar.google.com/),” *Cryptography*, vol. x, no. x, pp. xxx–xxx, 202x."
-      - "[2] **M. Yankovich**, F. Arute, G. Persiano, G. Segev, “[Authorized public-key search on iiot applications](https://scholar.google.com/),” *IEEE Transactions on Information Forensics and Security*, pp. xxx–xxx, 202x."
-  - title: Conference
+      - "[1] **J. Kim** and J. Yang*, “Understanding Metrics Of Vehicle Control Take-Over Request in Simulated Automated Vehicles”, International Journal of Automotive Technology, Vol. 21, Issue 3, pp. 757-770, June 2020.(2020 Academic Award for the best paper)"
+      - "[2] S. Jeong, **J. Kim**, S. Hong, J. Lim, M. Lee and J. Yang*, “Development of Driver Discomfortness Evaluation Under Severe Weather in Driving Simulator”, Transactions of KSAE, Vol.29, No.6, pp.557-568, June 2021."
+      - "[3] S. Hong, **J. Kim**, S. Baek and J. Yang*, “Simulation Study on Take-over Request in Partially Automated Vehicle Using Auditory and Haptic Modality”, Transactions of KSAE, Vol. 28, No. 8, pp 401-411, June 2020."
+      - "[4] J. Lee, H. Yun, **J. Kim**, S. Baek, H. Han, M. FakhrHosseini, E. Vasey, O. Lee, M. Jeon and J. Yang*, “Design of Single-modal Take-over Request in SAE Level 2 & 3 Automated Vehicle”, Transactions of KSAE, Vol. 27, No. 3, pp. 171-183, March 2019."
+  - title: Book
     ref:
-      - "[3] I. Lebedev, **M. Yankovich**, L. Wang, G. Segev, “[Post-training of deep bidirectional transformers for language understanding](https://scholar.google.com/),” *in Proc. 99th Annu. Meeting Assoc. Comput. Linguistics*, pp. xxx–xxx, 202x."
+      - "[1] J. Yang*, Lee, S. C., Nadri, C., **Kim, J.**, Shin, J., and Jeon, M, “Multimodal Displays for Takeover Requests”, In User Experience Design in the Era of Automated Driving (pp. 397-424). Springer, Cham."
