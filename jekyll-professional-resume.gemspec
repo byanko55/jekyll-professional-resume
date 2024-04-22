@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
     spec.name          = "jekyll-professional-resume"
-    spec.version       = "1.0.0"
+    spec.version       = "1.0.1"
     spec.authors       = ["Yankos"]
     spec.email         = ["byanko55@gmail.com"]
   
