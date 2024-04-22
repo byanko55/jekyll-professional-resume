@@ -236,6 +236,7 @@ a { text-decoration:none; }
         &:before{
             content:"";
             position: absolute;
+            visibility: hidden;
             top: 6px;
             left: -56px;
             width: 16px;
@@ -397,8 +398,12 @@ a { text-decoration:none; }
 
         .content-date { font-size: 16px; }
         .content-date img { width: 24px; }
+        
+        .content-header {
+            p { font-size: 18px; }
 
-        .content-header p { font-size: 18px; }
+            &:before{ visibility: visible !important; }
+        }
 
         .content-header p,
         .content-date {
