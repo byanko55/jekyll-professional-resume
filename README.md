@@ -21,10 +21,20 @@ Live demo is available [here](https://byanko55.github.io/resume-demo/).
 ## Setup
 Fork [this repository](https://github.com/byanko55/jekyll-professional-resume) or download the [source](https://github.com/byanko55/jekyll-professional-resume/releases) as a zip.
 
-If you use as destination a repository named USERNAME.github.io, then your URL will be https://USERNAME.github.io/.
+**Rename your repository as USERNAME.github.io or anything else.**
+
+If you choose the former, then your URL will be https://USERNAME.github.io/.
+
+Otherwise (let's say `myresume`), you need to edit the '*baseurl*' parameter in `_config.yml`. In this case, the resume page will be served to "https://USERNAME.github.io/myresume/".
+
+```yml
+# set baseurl as "/<repo-name>". ex) baseurl: /myresume
+baseurl: myresume/
+```
+
 
 ### Update Profile
-In `_config.yml`, you can modify personal info such as your *photo, phone number, email*, and other social accounts.
+In `_config.yml`, you can modify personal info such as your *photo, phone number, email*, and other social accounts. 
 
 ```yml
 profile_img: assets/img/profile.webp
